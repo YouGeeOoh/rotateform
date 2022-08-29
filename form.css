@@ -9,7 +9,7 @@ body, html, *{
   body{
     background-color: rgb(203, 205, 207);
   }
-  
+  /* This is just to chech something in git */
   .container{
     background-color: white;
     width: 30rem;
