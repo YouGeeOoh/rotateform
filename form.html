@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <div class="inner-card" id="card">
+      <div class="front-card">
+        <header>Login</header>
+        <!-- <label for="username">Username</label> -->
+        <input type ="text" name="username" id="username" placeholder="username">
+
+        <!-- <label for="password">Password</label> -->
+        <input type="password" name="username" id="username" placeholder="password">
+        <span>
+        <button class="button">Login</button> 
+        <button class="button" onclick="openRegister()">SignUp</button>
+      </span>
+        <div class="forgot">Forgot password? Click here!</div>
+      </div>
+
+      <div class="back-card"> 
+        <header>Register</header>
+        <!-- <label for="username">Username</label> -->
+        <input type ="text" name="username" id="username" placeholder="username">
+
+        <!-- <label for="password">Password</label> -->
+        <input type="password" name="username" id="username" placeholder="password">
+
+        <div class="footer">
+        <button class="button" onclick="openLogin()">Login</button> 
+        <button class="button">SignUp</button>
+      </div>
+      <div class="forgot">Forgot password? Click here!</div>
+    </div>
+    </div>
+    </div>
+
+    <script>
+      var card= document.getElementById("card")
+      function openRegister(){
+        card.style.transform = "rotateY(-180deg)";
+      } 
+
+      function openLogin(){
+        card.style.transform = "rotateY(0deg)";
+      } 
+    </script>
+  
+</body>
+</html>
